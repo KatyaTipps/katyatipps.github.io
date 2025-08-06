@@ -1,3 +1,132 @@
-h1 {
-    text-align: center;
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --accent: #007bff;
 }
+
+body.dark-mode {
+    --bg: #121212;
+    --text: #f0f0f0;
+    --accent: #1e90ff;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--bg);
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-links li {
+    background-color: var(--bg);
+    border: 2px solid var(--text);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.nav-links:hover {
+    background-color: #ddd;
+}
+
+body.dark-mode .nav-links li:hover {
+    background-color: #333;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--accent);
+    background-color: transparent;
+    color: var(--text);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+main {
+    padding: 2rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.5rem;
+}
+
+main h2 {
+    margin-top: 2rem;
+    color: var(--text);
+    border-bottom: 2px soliv var(--text);
+    padding-bottom: 0.5rem;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+main a {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--bg);
+    color: var(--text);
+    border-top: 2px solid var(--accent);
+}
+
+footer a {
+    margin: 0 10px;
+    color: var(--text);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+

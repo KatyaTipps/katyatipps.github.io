@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Katya Tipps </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Home - Katya Tipps Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
-
     <body>
-        <h1>About Me</h1>
-        <p>Hello! My name is Katya Tipps, and I am a Biomedical Engineer at the University of Florida. I am interested in the application of medical devices within orthopedic treatment and recovery.</p> 
-        <img src="Tipps_Katya.png" height="256" width="230">
+        <!-- Navigation Header -->
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <span class="logo">Katya Tipps</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button onclick="toggleMode()">🌗</button>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>About Me</h1>
+            <p><strong>Major:</strong> Biomedical Engineering</p>
+            <p><strong>Interests:</strong> I am interested in the application of medical devices within orthopedic treatment and recovery.</p>
+            <img src="Tipps_Katya.png" alt="Profile" height="256" width="230" />
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Katya Tipps</p>
+            <p>
+                <a href="malito:katyatipps@ufl.edu">Email</a> |
+                <a href="https://github.com/KatyaTipps" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/katya-tipps/" target="_blank">LinkedIn</a>
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
